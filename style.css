@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #01030c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #ced4da;
+}
+
+.container {
+    background: #03071e;
+    width: 960px;
+    max-width: 95%;
+    border-radius: 24px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 50px 0;
+    box-shadow:
+        0 0 15px rgba(178, 127, 31, 0.7),
+        0 0 30px rgba(254, 254, 104, 0.6),
+        0 0 60px rgba(243, 168, 10, 0.5);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+select,
+input[type="number"],
+input[type="text"],
+textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #636363;
+    border-radius: 8px;
+    color: #ced4da;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.checkbox-group.vertical {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.checkbox-group.vertical label {
+    flex: 0 0 calc(20% - 10px);
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1024px) {
+    .checkbox-group.vertical {
+        flex-direction: column;
+    }
+
+    .checkbox-group.vertical label {
+        flex: 1;
+        min-width: 120px;
+        box-sizing: border-box;
+    }
+}
+
+button {
+    color: #03071e;
+    background: linear-gradient(to right, #b27f1f, #fefe68, #f3a80a);
+    padding: 12px 24px;
+    border-radius: 99px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: block;
+    margin: 40px auto 0 auto;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fefe68;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

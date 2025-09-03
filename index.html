@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Casino Brand Rating Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Casino Brand Rating Calculator</h2>
+
+        <label>License Validity</label>
+        <select id="license">
+            <option value="0">No License</option>
+            <option value="30">Valid License</option>
+        </select>
+
+        <label>Payment Speed (1-5)</label>
+        <input type="number" id="payment" min="1" max="5" value="3">
+
+        <label>Payment Methods</label>
+        <div class="checkbox-group vertical">
+            <label><input type="checkbox" value="3.75" class="payment-method"> Local Bank</label>
+            <label><input type="checkbox" value="3.75" class="payment-method"> Crypto</label>
+            <label><input type="checkbox" value="3.75" class="payment-method"> E-Wallet</label>
+            <label><input type="checkbox" value="3.75" class="payment-method"> Card</label>
+        </div>
+
+        <label>Game Variety</label>
+        <div class="checkbox-group vertical">
+            <label><input type="checkbox" value="3" class="game-type"> Slots</label>
+            <label><input type="checkbox" value="3" class="game-type"> Poker</label>
+            <label><input type="checkbox" value="3" class="game-type"> Live Casino</label>
+            <label><input type="checkbox" value="3" class="game-type"> Sports Betting</label>
+            <label><input type="checkbox" value="3" class="game-type"> Bingo/Fishing</label>
+        </div>
+
+        <label>Bonus Coverage</label>
+        <div class="checkbox-group vertical">
+            <label><input type="checkbox" value="4" class="bonus-type"> Welcome Bonus</label>
+            <label><input type="checkbox" value="4" class="bonus-type"> Reload Bonus</label>
+            <label><input type="checkbox" value="4" class="bonus-type"> Free Spins</label>
+            <label><input type="checkbox" value="4" class="bonus-type"> Cashback</label>
+            <label><input type="checkbox" value="4" class="bonus-type"> No Deposit</label>
+        </div>
+
+        <button onclick="calculate()">Calculate Rating</button>
+        <div class="result" id="result"></div>
+
+        <footer class="footer">
+            <p>Powered by <a href="https://casinoprego.com" target="_blank">CasinoPrego</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
